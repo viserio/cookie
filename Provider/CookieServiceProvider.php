@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Cookie\Providers;
+namespace Viserio\Component\Cookie\Provider;
 
 use Interop\Container\ServiceProvider;
 use Psr\Container\ContainerInterface;
