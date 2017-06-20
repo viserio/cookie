@@ -1,7 +1,8 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Cookie\Proxie;
+namespace Viserio\Component\Cookie\Proxy;
 
+use Viserio\Component\Contracts\Cookie\QueueingFactory as JarContract;
 use Viserio\Component\StaticalProxy\StaticalProxy;
 
 class Cookie extends StaticalProxy
@@ -13,6 +14,6 @@ class Cookie extends StaticalProxy
      */
     public static function getInstanceIdentifier()
     {
-        return 'cookie';
+        return JarContract::class;
     }
 }
